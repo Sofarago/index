@@ -7,6 +7,7 @@ header {
   height:100px;
   width:100%;
   border-bottom:1px solid white;
+  position: relative;
   position:fixed;
   z-index:5;
   opacity:0.9;
@@ -38,8 +39,11 @@ body {
 
 .header-contents {
   float:right;
-  padding:20px 50px 20px 20px;
-  margin-right:40px;
+  height:100px
+  padding:0px 50px 00px 20px;
+  position: absolute;
+  bottom:0;
+  right:40px;
 }
 
 .header-contents li {
