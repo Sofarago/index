@@ -93,6 +93,9 @@ body {
 .contents {
   float:left;
   width:50%;
+}
+
+.disc {
   position:relative;
 }
 
@@ -105,9 +108,7 @@ body {
 
 .discription {
   width:50%;
-  position:absolute;
-  top:240px;
-  left:150px;
+  padding-left:150px;
   font-size:15px;
 }
 
