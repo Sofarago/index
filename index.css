@@ -56,6 +56,10 @@ body {
   height:40px;
 }
 
+.header-contents a {
+  color:white;
+}
+
 .front-top {
   background-image: url("top-background.jpg");
   height:400px;
