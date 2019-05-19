@@ -28,7 +28,7 @@ body {
 
 .header-logo img {
   float:left;
-  padding-left:100px;
+  padding-left:8%;
 }
 
 .header-contents li:hover {
@@ -37,10 +37,13 @@ body {
   cursor:pointer;
 }
 
+.header-contents a {
+  color:white;
+}
+
 .header-contents {
   float:right;
-  height:100px
-  padding:0px 50px 00px 20px;
+  height:100%;
   position: absolute;
   bottom:0;
   right:40px;
@@ -51,9 +54,9 @@ body {
   list-style: none;
   color:white;
   float:left;
-  padding:25px 70px 0 70px;
+  padding:25px 70px 20px 70px;
   border-left:2px solid white;
-  height:40px;
+  margin-top: 10px;
 }
 
 .header-contents a {
