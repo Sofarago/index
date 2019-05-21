@@ -1,0 +1,60 @@
+@media all and (max-width: 700px) {
+  .wrapper {
+    overflow: hidden;
+  }
+  .header-contents {
+    display:none;
+  }
+
+  body {
+    position: relative;
+    padding-bottom: 230px;
+  }
+
+  .header-logo img {
+    width:40%;
+    padding-left:27%;
+    padding-top: 25px;
+  }
+
+  .front-top {
+    height:300px;
+  }
+
+  .top-contents h1 {
+    font-size: 70px;
+    text-align: center;
+    position:static;
+  }
+
+  .contents-text {
+    padding:0 0 0 0;
+    text-align: center;
+  }
+
+  .contents {
+    width:100%;
+  }
+
+  .front-bot {
+    height: auto;
+  }
+
+  .front-bot {
+    position:relative;
+    margin-bottom: 500px;
+  }
+
+  footer {
+    position:absolute;
+    bottom:0;
+  }
+
+  .info-text{
+    display: none;
+  }
+
+  .btn-wrapper p {
+    display: none;
+  }
+}
