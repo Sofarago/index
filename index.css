@@ -3,10 +3,10 @@
 
 
 header {
-  background-color:#75A9FF;
+  background-color:white;
   height:100px;
-  width:100%;
-  border-bottom:1px solid white;
+  width:100vw;
+  border-bottom:1px solid silver;
   position: relative;
   position:fixed;
   z-index:5;
@@ -28,17 +28,18 @@ body {
 
 .header-logo img {
   float:left;
-  padding-left:8%;
+  padding-left:10%;
+  padding-top: 20px;
 }
 
 .header-contents li:hover {
-  background-color:#5D99FF;
+  background-color:#DDDDDD;
   transition: all 0.8s;
   cursor:pointer;
 }
 
 .header-contents a {
-  color:white;
+  color:black;
 }
 
 .header-contents {
@@ -52,15 +53,10 @@ body {
 .header-contents li {
   font-size:18px;
   list-style: none;
-  color:white;
   float:left;
-  padding:25px 70px 20px 70px;
-  border-left:2px solid white;
-  margin-top: 10px;
-}
-
-.header-contents a {
-  color:white;
+  padding:20px 70px 20px 70px;
+  border-left:2px solid silver;
+  margin-top: 17px;
 }
 
 .front-top {
