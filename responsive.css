@@ -35,6 +35,11 @@
   .contents {
     width:100%;
   }
+  
+  .discription {
+    margin: auto;
+    padding-left: 0;
+  }
 
   .front-bot {
     height: auto;
