@@ -36,6 +36,12 @@
     width:100%;
   }
   
+  .disc p {
+    position:absolute;
+    top:30%;
+    left:30%;
+  }
+  
   .discription {
     margin: auto;
     padding-left: 0;
