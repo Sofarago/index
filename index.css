@@ -127,13 +127,21 @@ footer {
   position: relative;
 }
 
-.btn {
-  color:white;
-  display:inline-block;
-  padding:8px 24px;
+.btn-wrapper {
+  height: 100%;
+  position:absolute;
+  right:0;
+  top:0;
+  padding-right: 12%;
 }
 
-
+.btn {
+  color:white;
+  display:block;
+  padding:8px 24px;
+  margin-top: 5%;
+  margin-left: 30px;
+}
 
 .fab {
   margin-right:10px;
@@ -141,22 +149,15 @@ footer {
 
 .twitter {
   background-color:#55acee;
-  margin-top:50px;
-   margin-right :70px;
-  float:right;
+
 }
 
 .facebook {
   background-color:#3B5998;
-  margin-top:110px;
-  margin-right:-130px;
-  float:right;
 }
 
 .btn-wrapper p {
   font-size:24px;
-  float:right;
-  margin:40px 20px 0 0;
   font-weight: bold;
 }
 
