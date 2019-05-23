@@ -26,6 +26,11 @@
     text-align: center;
     position:static;
   }
+  
+    .heading {
+    padding-top: 0;
+    font-size: 20px;
+  }
 
   .contents-text {
     padding:0 0 0 0;
