@@ -2,19 +2,18 @@
   .wrapper {
     overflow: hidden;
   }
-  .header-contents {
+  nav {
     display:none;
   }
 
   body {
     position: relative;
-    padding-bottom: 230px;
+    padding-bottom: 300px;
   }
 
   .header-logo img {
-    width:40%;
-    padding-left:27%;
-    padding-top: 25px;
+    width:35%;
+    margin-left: 22%;
   }
 
   .front-top {
@@ -26,8 +25,8 @@
     text-align: center;
     position:static;
   }
-  
-    .heading {
+
+  .heading {
     padding-top: 0;
     font-size: 20px;
   }
@@ -40,13 +39,13 @@
   .contents {
     width:100%;
   }
-  
+
   .disc p {
     position:absolute;
     top:30%;
     left:30%;
   }
-  
+
   .discription {
     margin: auto;
     padding-left: 0;
@@ -58,28 +57,26 @@
 
   .front-bot {
     position:relative;
-    margin-bottom: 500px;
+    padding-bottom: 500px;
   }
 
   footer {
     position:absolute;
     bottom:0;
-    height:170px;
+    height: 250px;
   }
 
-  .info-text{
-    display: none;
+  .info-wrapper {
+    padding-top: 30%;
   }
-  
-    .btn-wrapper {
-    padding-right: 5%;
+
+  .btn-wrapper {
+    margin-right: 15%;
+    width: 50%;
   }
 
   .btn {
-    margin-top:16%;
-  }
-
-  .btn-wrapper p {
-    display: none;
+    margin-top:4%;
+    text-align: center;
   }
 }
