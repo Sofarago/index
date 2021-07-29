@@ -91,27 +91,31 @@ nav li:hover {
   font-family: 'Oswald', sans-serif;
   letter-spacing: 3px;
 }
-
+.main-contents {
+  text-align: left;
+  white-space: nowrap;
+}
 .contents {
-  float:left;
-  width:50%;
-}
-
-.disc {
+  display: inline-block;
+  width: 50%;
   position:relative;
+  text-align: center;
 }
 
-.disc p {
-  position:absolute;
-  top:80px;
-  left:37%;
-  font-size:22px;
+.contents h3 {
+  position: absolute;
+  top: 30%;
+  left: 45%;
 }
 
 .discription {
   width:50%;
-  padding-left:150px;
   font-size:15px;
+  position:absolute;
+  top:90%;
+  left:25%;
+  font-size:15px;
+  white-space: normal
 }
 
 footer {
