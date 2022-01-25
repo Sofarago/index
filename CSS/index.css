@@ -1,15 +1,11 @@
 @charset "utf-8";
 
-
-
 header {
   background-color:white;
   height:80px;
-  width:100%;
   border-bottom:1px solid silver;
   position: relative;
-  position:fixed;
-  z-index:5;
+
   overflow: hidden;
 }
 
@@ -24,26 +20,46 @@ h1 {
 body {
   margin:0px;
   padding:0px;
-  width: 100%;
 }
 
-.header-logo {
-  justify-content: center;
+.contents {
+  min-height: 100vh;
+  padding-bottom: 150px;
+  position: relative;
+  box-sizing: border-box;
 }
 
-.header-logo img   {
-  float:left;
-  padding: 0.5% 0 0 10%;
-  width: 10%;
+.logo {
+  display: inline-block;
+  height: 80px;
+  overflow: hidden;
+}
+
+.logo a {
+  display: block;
+}
+
+.logo img   {
+  height: 80px;
+  width: auto;
+  margin-left: 80px;
 }
 
 nav {
-  margin-top: 35px;
-  margin-left: 22%;
+  float: right;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 0 auto;
+  margin-right: 70px;
 }
 
 nav a {
   color:black;
+  padding: 30px 30px;
 }
 
 nav li {
@@ -57,7 +73,88 @@ nav li:hover {
   cursor:pointer;
 }
 
-.front-top {
+.top {
+  background-image: url("../img/top-background.jpg");
+  height:400px;
+  background-size: cover;
+  padding:100px 0 200px 0 ;
+  text-align:left;
+  position: relative;
+}
+
+.top__wrapper {
+  position: absolute;
+  top: 0;
+  left: 90px;
+}
+
+.top__wrapper h1 {
+  font-size: 120px;
+  letter-spacing:10px;
+  opacity:0.8;
+  line-height: 50px;
+}
+
+.top__wrapper p {
+  color:white;
+  font-size:30px;
+  opacity:0.8;
+  top: -50px;
+}
+
+.main__contents {
+  height:650px;
+  width: 80vw;
+  background-color:#eeeeee;
+  font-family: 'Economica', sans-serif;
+  text-align: center;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.contents__wrapper {
+  height:650px;
+  width: 80vw;
+  background-color:#eeeeee;
+  font-family: 'Economica', sans-serif;
+  text-align: center;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.contents-main {
+  height:450px;
+  width: 80vw;
+  background-color:#eeeeee;
+  font-family: 'Economica', sans-serif;
+  text-align: center;
+  margin: 0 auto;
+  display: flex;
+}
+
+.contents__consept {
+  width: 40vw;
+}
+
+.contents-text {
+  padding:450px 0 0 300px;
+  color:white;
+  font-size:25px;
+  opacity:0.8;
+}
+
+.contents__title-mini {
+  position: absolute;
+  top: 10vh;
+  left: 18vw;
+}
+
+.contents__discription {
+  display: inline-block;
+  width: 25vw;
+}
+
+/* .front-top {
   background-image: url("../img/top-background.jpg");
   height:400px;
   background-size: cover;
@@ -83,11 +180,14 @@ nav li:hover {
   left:100px;
 }
 
-.front-bot {
+.main__contents {
   height:650px;
-  background-color:white;
+  width: 80vw;
+  background-color:#eeeeee;
+  font-family: 'Economica', sans-serif;
   text-align: center;
-  padding-top:30px;
+  overflow: hidden;
+  margin: 0 auto;
 }
 
 .heading {
@@ -96,18 +196,13 @@ nav li:hover {
   font-family: 'Oswald', sans-serif;
   letter-spacing: 3px;
 }
+
 .main-contents {
   text-align: left;
   white-space: nowrap;
 }
-.contents {
-  display: inline-block;
-  width: 49%;
-  position:relative;
-  text-align: center;
-}
 
-.contents h3 {
+.contents__title-mini {
   position: absolute;
   top: 30%;
   left: 45%;
@@ -121,29 +216,28 @@ nav li:hover {
   left:25%;
   font-size:15px;
   white-space: normal
-}
+} */
 
 footer {
   color:white;
   background-color:#222222;
-  height:200px;
+  height:150px;
   width:100%;
-  position: relative;
+  position: absolute;
+  bottom: 0;
 }
 
-.btn-wrapper {
-  position:absolute;
-  right:0;
-  top:0;
-  padding-right: 12%;
-  padding-top: 10px;
+.btn__wrapper {
+  position: absolute;
+  top: 30px;
+  right: 40px;
 }
 
 .btn {
   color:white;
   display:block;
+  margin: 5px 5px;
   padding:8px 24px;
-  margin-top: 13%;
   margin-left: 30px;
 }
 
@@ -161,25 +255,82 @@ footer {
 }
 
 
-.info-wrapper {
-  width:40%;
-  margin: auto;
+.info__wrapper {
   text-align: center;
 }
 
-.author-info {
-  padding-top: 5%;
+.info__author {
+  padding-top: 30px;
   margin: 0 0;
 }
 
-.info-wrapper h2 {
-  font-size:40px;
+.info__wrapper h2 {
+  font-size:35px;
   font-weight: normal;
   margin:0 0;
 }
 
 .copyright {
-  margin-top: 5%;
   font-size: 10px;
 }
 
+@media screen and (max-width:600px) {
+	/*　画面サイズが600px以下の場合ここの記述が適用される　*/
+
+  header {
+    display: flex;
+    flex-direction: column;
+    height: 120px;
+  }
+
+  header a {
+    text-align: center;
+  }
+  
+  .logo img {
+    margin-left: initial;
+  }
+
+  nav ul {
+    margin-right: initial;
+  }
+
+  nav a {
+    padding: 0 15px;
+  }
+
+  .contents__wrapper {
+    height: 1000px;
+    width: 100vw;
+  }
+
+  .top {
+    padding: 100px 0 50px 0;
+  }
+
+  .top__wrapper {
+    position: absolute;
+    top: 0;
+    left: 30px;
+  }
+
+  .top__wrapper h1 {
+    font-size: 80px;
+  }
+
+  .contents-main {
+    display: initial;
+  }
+
+  .contents__consept {
+    width: 100%;
+  }
+
+  .contents__discription {
+    width: 85vw;
+  } 
+
+  .btn__wrapper {
+    display: none;
+  }
+}
